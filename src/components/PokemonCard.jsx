@@ -11,21 +11,14 @@ const pokemonList = [
 
 function PokemonCard() {
   const pokemon = pokemonList[0];
-  // console.log(pokemon);
   return (
     <figure>
-      {" "}
       {pokemon === pokemonList[0] ? (
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-          alt="Bulbasaur"
-        />
+        <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
         <p>???</p>
       )}
-      <figcaption>
-        {pokemon === pokemonList[0] ? "Bulbasaur" : "Mew"}
-      </figcaption>
+      <figcaption>{pokemon.name}</figcaption>
     </figure>
   );
 }

@@ -1,6 +1,7 @@
 import PokemonCard from "./components/PokemonCard.jsx";
 import NavBar from "./components/NavBar.jsx";
 import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 
 const pokemonList = [
@@ -35,6 +36,10 @@ const pokemonList = [
 
 const App = () => {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+
+  useEffect(() => {
+    alert("Hello pokemon trainer :)");
+  }, []);
 
   return (
     <div>

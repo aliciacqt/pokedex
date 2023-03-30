@@ -11,6 +11,10 @@ const NavBar = ({ pokemonIndex, setPokemonIndex, pokemonList }) => {
     );
   };
 
+  if (pokemonIndex === 3) {
+    alert("Pika pikachu !!!");
+  }
+
   return (
     <nav>
       {pokemonIndex > 0 && (

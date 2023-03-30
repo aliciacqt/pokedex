@@ -18,6 +18,32 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+figure {
+  background-color: #eee30e;
+  border-radius: 1rem;
+  padding-bottom: 20px;
+}
+
+figure img {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 20px;
+  border-radius: 1rem;
+}
+
+figcaption {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000000;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 900;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+p {
+  color: #000;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

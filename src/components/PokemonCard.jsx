@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 
-function PokemonCard({ pokemonList }) {
-  const pokemon = pokemonList[0];
+function PokemonCard({ pokemon }) {
+  // const pokemon = pokemonList[0];
   return (
     <figure>
-      {pokemon === pokemonList[0] ? (
+      {pokemon.imgSrc ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
         <p>???</p>
@@ -15,7 +15,7 @@ function PokemonCard({ pokemonList }) {
 }
 
 PokemonCard.propTypes = {
-  pokemonList: PropTypes.shape({
+  pokemon: PropTypes.shape({
     imgSrc: PropTypes.string,
     name: PropTypes.string.isRequired,
   }).isRequired,

@@ -7,30 +7,35 @@ import "./App.css";
 const pokemonList = [
   {
     name: "bulbasaur",
+    type: "grass",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
 
   {
     name: "charmander",
+    type: "fire",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
   },
 
   {
     name: "squirtle",
+    type: "water",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
   },
 
   {
     name: "pikachu",
+    type: "electrik",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
   },
 
   {
     name: "mew",
+    type: "psy",
   },
 ];
 
